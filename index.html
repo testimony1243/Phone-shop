@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TESTIMONY EXCHANGE</title>
+  <title>TESTIMONY EXCHANGE | New & Used Phones</title>
 
   <style>
     * {
@@ -21,155 +21,118 @@
     header {
       background: #111;
       color: white;
+      padding: 25px 15px;
       text-align: center;
-      padding: 30px 15px;
     }
 
     header h1 {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     header p {
+      color: #ccc;
       font-size: 15px;
     }
 
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px #ddd;
-    }
-
-    nav a {
-      color: #111;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      color: #555;
-      margin-bottom: 25px;
-      line-height: 1.6;
-    }
-
-    .button {
-      display: inline-block;
-      background: #111;
-      color: white;
-      padding: 13px 22px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
+    .container {
       max-width: 1100px;
-      margin: auto;
-      padding: 40px 15px;
+      margin: 25px auto;
+      padding: 0 15px;
     }
 
-    section h2 {
-      text-align: center;
+    .welcome {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
       margin-bottom: 25px;
-    }
-
-    .brands {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .brand {
-      background: white;
-      padding: 20px;
       text-align: center;
-      border-radius: 10px;
-      font-weight: bold;
-      box-shadow: 0 2px 8px #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    .products {
+    .welcome h2 {
+      margin-bottom: 10px;
+    }
+
+    .phones {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
-    .product {
+    .phone-card {
       background: white;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 8px #ddd;
-      padding-bottom: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
-    .phone-photo {
-      height: 150px;
-      background: #e5e5e5;
+    .phone-image {
+      height: 230px;
+      background: #e9e9e9;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #777;
+      font-size: 16px;
     }
 
-    .product h3 {
-      padding: 12px 12px 5px;
+    .phone-info {
+      padding: 18px;
     }
 
-    .product p {
-      padding: 3px 12px;
-      color: #555;
+    .phone-info h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
     }
 
-    .product a {
+    .storage {
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .condition {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .contact-btn {
       display: block;
-      margin: 12px;
+      width: 100%;
+      padding: 12px;
       background: #111;
       color: white;
       text-align: center;
-      padding: 10px;
-      border-radius: 6px;
       text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
     }
 
-    .contact {
-      background: #111;
-      color: white;
-      text-align: center;
-      max-width: none;
-    }
-
-    .contact p {
-      margin: 10px;
+    .contact-btn:hover {
+      background: #333;
     }
 
     footer {
-      background: #000;
-      color: #aaa;
+      margin-top: 40px;
+      background: #111;
+      color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 13px;
+      padding: 25px 15px;
     }
 
     @media (max-width: 500px) {
-      .products {
-        grid-template-columns: 1fr;
+      header h1 {
+        font-size: 23px;
       }
 
-      .hero h2 {
-        font-size: 25px;
+      .phones {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -179,65 +142,24 @@
 
   <header>
     <h1>TESTIMONY EXCHANGE</h1>
-    <p>Testify with Quality, Exchange with Trust.</p>
+    <p>New & Used Phones</p>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#phones">Phones</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
 
-  <div class="hero" id="home">
-    <h2>Quality Phones. Trusted Exchange.</h2>
-    <p>
-      New and used phones at great prices.<br>
-      iPhone • Samsung • Google Pixel • Redmi • Infinix • Tecno
-    </p>
-
-    <a class="button"
-       href="https://wa.me/2347082684227?text=Hello%20TESTIMONY%20EXCHANGE%2C%20I%20want%20to%20ask%20about%20a%20phone.">
-      Chat on WhatsApp
-    </a>
-  </div>
-
-  <section>
-    <h2>Our Brands</h2>
-
-    <div class="brands">
-      <div class="brand">iPhone</div>
-      <div class="brand">Samsung</div>
-      <div class="brand">Google Pixel</div>
-      <div class="brand">Redmi</div>
-      <div class="brand">Infinix</div>
-      <div class="brand">Tecno</div>
+    <div class="welcome">
+      <h2>Available Phones</h2>
+      <p>Quality tested phones at affordable prices.</p>
     </div>
-  </section>
 
-  <section id="phones">
-    <h2>Featured Phones</h2>
+    <div class="phones">
 
-    <div class="products">
+      <!-- Samsung S10 -->
+      <div class="phone-card">
+        <div class="phone-image">
+          Samsung S10 Photo
+        </div>
 
-      <div class="product">
-        <div class="phone-photo">iPhone Photo</div>
-        <h3>iPhone</h3>
-        <p>New & Used</p>
-        <p>Price: Contact us</p>
-        <a href="https://wa.me/2347082684227?text=Hello%2C%20I%20am%20interested%20in%20your%20iPhone.">
-          Ask Price
-        </a>
-      </div>
-
-      <div class="product">
-        <div class="phone-photo">Samsung Photo</div>
-        <h3>Samsung</h3>
-        <p>New & Used</p>
-        <p>Price: Contact us</p>
-        <a href="https://wa.me/2347082684227?text=Hello%2C%20I%20am%20interested%20in%20your%20Samsung.">
-          Ask Price
-        </a>
-      </div>
-
-      <div class="product">
-        <div class="phone
+        <div class="phone-info">
+          <h3>Samsung S10</h3>
+          <p
