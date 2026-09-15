@@ -1,67 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TESTIMONY EXCHANGE | New & Used Phones</title>
+<title>TESTIMONY EXCHANGE | Phone Shop</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  color: #111;
+}
+
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #ddd;
+  font-size: 15px;
+}
+
+.hero {
+  background: white;
+  width: 92%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.hero h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.search {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.products {
+  width: 92%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.phone-image {
+  height: 220px;
+  background: #eee;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.product p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 7px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>TESTIMONY EXCHANGE</h1>
+  <p>Testify with Quality, Exchange with Trust.</p>
+</header>
+
+<section class="hero">
+  <h2>New & Used Phones</h2>
+  <p>Quality smartphones available in Kano, Nigeria.</p>
+  <p><strong>📍 BATA, GIDAN WAYA</strong></p>
+  <p>🕙 Open: 10AM – 5PM</p>
+</section>
+
+<input
+  type="text"
+  class="search"
+  id="search"
+  placeholder="Search for a phone..."
+  onkeyup="searchPhones()"
+>
+
+<section class="products">
+
+  <div class="product">
+    <div class="phone-image">Samsung S10 Photo</div>
+    <h3>Samsung S10</h3>
+    <p>128GB • 1 SIM</p>
+    <div class="price">₦160,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+  <div class="product">
+    <div class="phone-image">Samsung A13 Photo</div>
+    <h3>Samsung A13</h3>
+    <p>128GB</p>
+    <div class="price">₦110,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+  <div class="product">
+    <div class="phone-image">iPhone 13 Photo</div>
+    <h3>iPhone 13</h3>
+    <p>128GB • Non-display available</p>
+    <div class="price">₦370,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+  <div class="product">
+    <div class="phone-image">Samsung A22 Photo</div>
+    <h3>Samsung A22</h3>
+    <p>128GB • Original Screen</p>
+    <div class="price">₦160,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+  <div class="product">
+    <div class="phone-image">iPhone 11 Photo</div>
+    <h3>iPhone 11</h3>
+    <p>Off ID</p>
+    <div class="price">₦155,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+  <div class="product">
+    <div class="phone-image">iPhone 11 Photo</div>
+    <h3>iPhone 11</h3>
+    <p>With ID</p>
+    <div class="price">₦190,000</div>
+    <a class="whatsapp" href="https://wa.me/2347082684227">
+      WhatsApp to Buy
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  <p><strong>TESTIMONY EXCHANGE</strong></p>
+  <p>📞 +234 708 268 4227</p>
+  <p>📞 +234 702 572 3653</p>
+  <p>📍 BATA, GIDAN WAYA, Kano</p>
+</footer>
+
+<script>
+function searchPhones() {
+  const search = document.getElementById("search").value.toLowerCase();
+  const products = document.querySelectorAll(".product");
+
+  products.forEach(function(product) {
+    const text = product.innerText.toLowerCase();
+
+    if (text.includes(search)) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
     }
+  });
+}
+</script>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f5f7;
-      color: #171717;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
-    }
-
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      color: #ddd;
-      font-size: 15px;
-    }
-
-    .hero {
-      background: white;
-      margin: 20px auto;
-      padding: 25px 18px;
-      width: 92%;
-      max-width: 900px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
-
-    .hero h2 {
-      font-size: 27px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: #555;
-      margin-bottom: 18px;
-    }
-
-    .search {
-      width: 92%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      padding: 15px;
-      border: 
+</body>
+</html>
