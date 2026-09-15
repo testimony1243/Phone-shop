@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>TESTIMONY EXCHANGE | New & Used Phones</title>
 
   <style>
@@ -10,156 +11,57 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
 
     body {
-      background: #f5f5f5;
-      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f5f7;
+      color: #171717;
     }
 
     header {
       background: #111;
       color: white;
-      padding: 25px 15px;
       text-align: center;
+      padding: 28px 15px;
     }
 
     header h1 {
       font-size: 28px;
       margin-bottom: 8px;
+      letter-spacing: 1px;
     }
 
     header p {
-      color: #ccc;
+      color: #ddd;
       font-size: 15px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: 25px auto;
-      padding: 0 15px;
-    }
-
-    .welcome {
+    .hero {
       background: white;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 25px;
+      margin: 20px auto;
+      padding: 25px 18px;
+      width: 92%;
+      max-width: 900px;
+      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
-    .welcome h2 {
+    .hero h2 {
+      font-size: 27px;
       margin-bottom: 10px;
     }
 
-    .phones {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .hero p {
+      color: #555;
+      margin-bottom: 18px;
     }
 
-    .phone-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-
-    .phone-image {
-      height: 230px;
-      background: #e9e9e9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-size: 16px;
-    }
-
-    .phone-info {
-      padding: 18px;
-    }
-
-    .phone-info h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
-    .storage {
-      color: #666;
-      margin-bottom: 8px;
-    }
-
-    .condition {
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .price {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .contact-btn {
+    .search {
+      width: 92%;
+      max-width: 600px;
+      margin: 20px auto;
       display: block;
-      width: 100%;
-      padding: 12px;
-      background: #111;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 7px;
-      font-weight: bold;
-    }
-
-    .contact-btn:hover {
-      background: #333;
-    }
-
-    footer {
-      margin-top: 40px;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-
-    @media (max-width: 500px) {
-      header h1 {
-        font-size: 23px;
-      }
-
-      .phones {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>TESTIMONY EXCHANGE</h1>
-    <p>New & Used Phones</p>
-  </header>
-
-  <div class="container">
-
-    <div class="welcome">
-      <h2>Available Phones</h2>
-      <p>Quality tested phones at affordable prices.</p>
-    </div>
-
-    <div class="phones">
-
-      <!-- Samsung S10 -->
-      <div class="phone-card">
-        <div class="phone-image">
-          Samsung S10 Photo
-        </div>
-
-        <div class="phone-info">
-          <h3>Samsung S10</h3>
-          <p
+      padding: 15px;
+      border: 
